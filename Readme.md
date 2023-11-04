@@ -1,13 +1,53 @@
 # Online Chat Backend
 
-This is the backend server for an online chat application
-built with Django and Django Channels.
+This is the backend server for an Online Chat Application
+built with Django and Django Channels. 
+It was done in team as a project for University.
 
+
+# Project Description
+
+This backend server is the central component of an Online Chat Application built with Django, Django Channels, and Django Rest Framework. 
+It serves as the core infrastructure for real-time messaging and collaboration, allowing users to connect, chat, and engage in conversations in a seamless and interactive manner.
 The backend server is designed to work with the
 corresponding [frontend client](https://github.com/Maksvell129/online-chat-frontend),
 which is built with React and integrates with the server using the provided API.
 
-## Local Development Environment
+### Technologies used:
+
+1) **Django**: Django was selected as web framework due to its robustness, security features, and ease of development. 
+It provides a solid foundation for building web applications and a powerful ORM system for managing data.
+2) **Django Rest Framework**: For building the API endpoints and ensuring smooth communication between the frontend and backend, Django Rest Framework was integrated. 
+This technology allows us to create a well-structured and user-friendly API that the React frontend can seamlessly interact with.
+3) **Django Channels**: For real-time functionality, Django Channels were chosen to enable WebSocket support. 
+This technology ensures that users can engage in live conversations with minimal latency, making it an ideal choice for a chat application.
+
+### Challenges Faced: 
+
+1) **Real-time Communication**: Implementing and managing real-time communication using WebSocket technology posed a significant challenge. 
+It required careful planning to ensure that messages were delivered promptly and efficiently. 
+2) **Security**: Maintaining the security of user data, messages, and authentication tokens was a top priority. 
+Security measures were implemented, including authorization checks and encryption, to protect user privacy and data integrity. 
+
+# Key Features:
+
+1) **Real-time Messaging**: The **Online Chat Application** offers users the ability to send and receive messages in real-time.
+Whether it's one-on-one conversations or group chats, users can engage in dynamic and immediate communication, making it an ideal platform for instant messaging.
+
+2) **User Account Management**: Users can create their accounts by registering with their credentials. 
+The registration process ensures that users have a unique identity on the platform, 
+enabling them to customize their profiles and manage their chat history.
+
+3) **User Authentication with JWT**: To secure the API endpoints and user data, the application employs **JWT (JSON Web Tokens)** authentication. 
+When a user logs in, the backend generates a JWT token, which is then provided to the frontend. 
+This token serves as a secure and efficient means of authenticating future requests, 
+ensuring that only authorized users can access their accounts and messages.
+
+4) **Django Channels for Real-time Communication**: To enable real-time communication between users, the **Online Chat Application** leverages **Django Channels**, 
+a powerful Django library that extends the built-in ASGI (Asynchronous Server Gateway Interface) server with WebSocket support. 
+This technology ensures that messages are delivered promptly and efficiently, allowing users to engage in live conversations with minimal latency.
+
+# Local Development Environment
 
 ### Requirements
 
@@ -106,16 +146,9 @@ which is built with React and integrates with the server using the provided API.
    docker-compose run web python manage.py createsuperuser
    ```
 
-# About the Project
+# Credits
 
-The online chat application provides a platform for users 
-to send and receive messages in real-time. 
-Users can create an account, login with their credentials,
-and start chatting with other users.
-
-JWT authentication is used to secure the API endpoints.
-When a user logs in, the backend generates a JWT token
-that the frontend can use to authenticate future requests.
-
-The application uses Django Channels to handle the real-time communication between users.
-Channels is a Django library that extends the built-in ASGI server with WebSocket support.
+Development team:
+1) https://github.com/Ash1VT
+2) https://github.com/Maksvell129
+3) https://github.com/Egorfog
